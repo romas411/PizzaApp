@@ -1,0 +1,36 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PizzaApplication.PizzaPage" Title="Пицца">
+	<ContentPage.Content>
+		<ListView x:Name="PizzasView">
+    		<ListView.ItemTemplate>
+    			<DataTemplate x:Name="DataTempl">
+    				<ViewCell x:Name="ViewCell">
+      					<ViewCell.View>
+      						<StackLayout Orientation="Horizontal">
+                     			<Image Source="{Binding PizzaImage}" HeightRequest="40" WidthRequest="40"/>
+                   				<StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+        							<Label Text="{Binding Name}" XAlign="Center" TextColor="Green" FontSize="16"></Label>
+        							<Label Text="{Binding Content}" XAlign="Center" TextColor="Gray" FontSize="10"></Label>
+        						</StackLayout>
+        						<StackLayout HorizontalOptions="End" VerticalOptions="Center">
+        							<!--<Label Text="{Binding Weight}" TextColor="Black" BackgroundColor="Green"></Label>
+        							<Label Text="{Binding Price}" TextColor="Black" BackgroundColor="Gray"></Label>-->
+        							<Grid RowSpacing="2" ColumnSpacing="2" BackgroundColor="Black" VerticalOptions="FillAndExpand">
+        								<Grid.RowDefinitions>
+    										<RowDefinition Height="20"/>
+    										<RowDefinition Height="20" />
+    									</Grid.RowDefinitions>
+    									<Grid.ColumnDefinitions>
+    										<ColumnDefinition Width="40" />
+    									</Grid.ColumnDefinitions>
+    									<Label BackgroundColor="Green" XAlign="Center" YAlign="Center" Grid.Row="0" Grid.Column="0" FontSize="10" TextColor="White" Text="{Binding Weight}"></Label>
+    									<Label BackgroundColor="Silver" XAlign="Center" YAlign="Center" Grid.Row="1" Grid.Column="0" FontSize="10" TextColor="Black" Text="{Binding Price}"></Label>
+        							</Grid>
+        						</StackLayout>
+        					</StackLayout>
+        				</ViewCell.View>
+        			</ViewCell>
+    			</DataTemplate>
+    		</ListView.ItemTemplate>
+  		</ListView>
+  	</ContentPage.Content>
+</ContentPage>

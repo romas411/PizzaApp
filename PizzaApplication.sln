@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApplication", "PizzaApplication\PizzaApplication.csproj", "{337B0867-F37F-4587-87A0-1467A3386204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaApplication.Droid", "Droid\PizzaApplication.Droid.csproj", "{DD36EE9A-F431-427E-A324-56E7B87E5136}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{337B0867-F37F-4587-87A0-1467A3386204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{337B0867-F37F-4587-87A0-1467A3386204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{337B0867-F37F-4587-87A0-1467A3386204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{337B0867-F37F-4587-87A0-1467A3386204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD36EE9A-F431-427E-A324-56E7B87E5136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD36EE9A-F431-427E-A324-56E7B87E5136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD36EE9A-F431-427E-A324-56E7B87E5136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD36EE9A-F431-427E-A324-56E7B87E5136}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
